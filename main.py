@@ -19,9 +19,6 @@ def on_received_number(receivedNumber):
                         . . . . .
         """)
         music.play_tone(349, music.beat(BeatFraction.WHOLE))
-    else:
-        basic.show_string("SOS CALL!!")
-    basic.clear_screen()
 radio.on_received_number(on_received_number)
 
 # send_number 0 / dot
@@ -52,11 +49,10 @@ def on_pin_pressed_p1():
     radio.set_group(channel)
 input.on_pin_pressed(TouchPin.P1, on_pin_pressed_p1)
 
-def on_gesture_shake():
-    radio.send_number(2)
-input.on_gesture(Gesture.SHAKE, on_gesture_shake)
-
 channel = 0
 # set channel
 channel = 3
 radio.set_group(channel)
+
+# ALL CODE IS MADE IN PXT / MAKECODE
+# Start of Mirco:Chat = 2021/10 by 1rom11:dev (owner)
