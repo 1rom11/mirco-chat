@@ -28,7 +28,7 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
 input.onPinPressed(TouchPin.P2, function on_pin_pressed_p2() {
     
     channel += -1
-    basic.showString("" + ("" + channel) + "channel")
+    basic.showString("" + ("" + channel))
     basic.clearScreen()
     radio.setGroup(channel)
 })
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
 input.onPinPressed(TouchPin.P1, function on_pin_pressed_p1() {
     
     channel += 1
-    basic.showString("" + ("" + channel) + "channel")
+    basic.showString("" + ("" + channel))
     basic.clearScreen()
     radio.setGroup(channel)
 })

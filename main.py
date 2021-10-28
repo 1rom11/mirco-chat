@@ -30,7 +30,7 @@ input.on_button_pressed(Button.A, on_button_pressed_a)
 def on_pin_pressed_p2():
     global channel
     channel += -1
-    basic.show_string("" + str(channel) + "channel")
+    basic.show_string("" + str(channel))
     basic.clear_screen()
     radio.set_group(channel)
 input.on_pin_pressed(TouchPin.P2, on_pin_pressed_p2)
@@ -44,7 +44,7 @@ input.on_button_pressed(Button.B, on_button_pressed_b)
 def on_pin_pressed_p1():
     global channel
     channel += 1
-    basic.show_string("" + str(channel) + "channel")
+    basic.show_string("" + str(channel))
     basic.clear_screen()
     radio.set_group(channel)
 input.on_pin_pressed(TouchPin.P1, on_pin_pressed_p1)
@@ -55,4 +55,4 @@ channel = 3
 radio.set_group(channel)
 
 # ALL CODE IS MADE IN PXT / MAKECODE
-# Start of Mirco:Chat = 2021/10 by 1rom11:dev (owner)
+# Start of Mirco:Chat = 2021/10 by 1rom11:dev (owner of code)
