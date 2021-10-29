@@ -1,6 +1,8 @@
+//  https://1rom11.github.io/mirco-chat/
 //  set channel
 let channel = 3
 radio.setGroup(channel)
+//  Check startup
 basic.showIcon(IconNames.Yes)
 basic.pause(200)
 basic.clearScreen()
@@ -11,14 +13,6 @@ basic.clearScreen()
 input.onButtonPressed(Button.A, function on_button_pressed_a() {
     radio.sendNumber(0)
 })
-// -1
-input.onPinPressed(TouchPin.P2, function on_pin_pressed_p2() {
-    
-    channel += -1
-    basic.showString("" + ("" + channel))
-    basic.clearScreen()
-    radio.setGroup(channel)
-})
 //  send_number 1 / line
 input.onButtonPressed(Button.B, function on_button_pressed_b() {
     radio.sendNumber(1)
@@ -27,6 +21,14 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
 input.onPinPressed(TouchPin.P1, function on_pin_pressed_p1() {
     
     channel += 1
+    basic.showString("" + ("" + channel))
+    basic.clearScreen()
+    radio.setGroup(channel)
+})
+// -1 Channel
+input.onPinPressed(TouchPin.P2, function on_pin_pressed_p2() {
+    
+    channel += -1
     basic.showString("" + ("" + channel))
     basic.clearScreen()
     radio.setGroup(channel)
