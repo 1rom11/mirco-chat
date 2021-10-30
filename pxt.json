@@ -12,7 +12,8 @@
         "main.ts",
         "README.md",
         "main.py",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        null
     ],
     "testFiles": [
         "test.ts"
