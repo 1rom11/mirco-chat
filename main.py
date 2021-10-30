@@ -45,7 +45,6 @@ def on_pin_pressed_p2():
 input.on_pin_pressed(TouchPin.P2, on_pin_pressed_p2)
 
 # Receive message in leds / morse code (decoder)
-#dez nutes
 def on_received_number(receivedNumber):
     if receivedNumber == 0:
         basic.show_leds("""

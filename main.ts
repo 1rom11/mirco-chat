@@ -34,7 +34,6 @@ input.onPinPressed(TouchPin.P2, function on_pin_pressed_p2() {
     radio.setGroup(channel)
 })
 //  Receive message in leds / morse code (decoder)
-// dez nutes
 radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
     if (receivedNumber == 0) {
         basic.showLeds(`
